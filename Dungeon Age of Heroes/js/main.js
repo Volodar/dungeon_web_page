@@ -4,7 +4,7 @@ new WOW().init();
 $(document).ready(function() {
     //MagnificPopup
     $('.popup-youtube').magnificPopup({
-        disableOn: 700,
+        disableOn: 320,
         type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
         scrollLink.each(function () {
 
-            var sectionOffset = $(this.hash).offset().top - 65;
+            var sectionOffset = $(this.hash).offset().top - 73;
 
             if (sectionOffset <= scrollbarLocation) {
                 $('.page-link').removeClass('active');
@@ -101,8 +101,6 @@ $(document).ready(function() {
             $(".toggler-icon").first().css('transform', 'rotate(45deg) translateX(6px)');
             $(".toggler-icon").last().css('transform', 'rotate(-45deg) translateX(6px)');
             $(".toggler-icon").eq(1).css('display', 'none');
-
-
             $(".main-menu__items").removeClass('mobile-active');
             $(".main-menu__items").addClass('mobile-active');
             toggle = true;

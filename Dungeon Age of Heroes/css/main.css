@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:600,700&display=swap");
 /*RESET HTML STYLES*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -175,17 +174,6 @@ body{
     padding-right: 15px;
 }
 
-/*.menu-mobile{
-    position: absolute;
-    top: 64px;
-    left: 0;
-    background-color: #ffffff;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}*/
-
 .main-menu__items{
     font-size: 0;
     display: block;
@@ -329,11 +317,6 @@ body{
     width: 50%;
 }
 
-
-.about-block__title{
-
-}
-
 .game-name{
     color: #007bff;
     display: block;
@@ -374,7 +357,6 @@ body{
     font-size: 20px;
     color: #007bff;
 }
-
 
 .shape-circle{
     background: linear-gradient(#61009d 0%, #cb107a 100%);
@@ -536,10 +518,6 @@ body{
     margin-left: 0;
 }
 
-.footer_area__app-links{
-
-}
-
 .footer-area__copyright{
     border-top: 1px solid #747E88;
 }
@@ -653,8 +631,18 @@ body{
 }
 
 /*Adaptive*/
+@media (min-width: 320px) and (max-width: 413px) {
+    .shape-circle {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .about-block__screenshot {
+        transform: rotate(-25deg) translateY(-47%) translateX(0%) !important;
+        max-width: 185px !important;
+    }
+}
 
-@media (max-width: 767px) {
+@media (max-width: 920px) {
     .main-wrap::before{
         width: 260px;
         height: 370px;
@@ -665,6 +653,12 @@ body{
     }
     .main-header__nav{
         align-items: center;
+    }
+    .logo{
+        padding: 0;
+    }
+    .main-menu{
+        padding: 0;
     }
     .main-menu__items{
         display: flex;
@@ -759,7 +753,7 @@ body{
         height: 300px;
     }
     .about-block__screenshot{
-        transform: rotate(-25deg) translateY(-12%) translateX(-5px);
+        transform: rotate(-25deg) translateY(-40%) translateX(3%);
         max-width: 230px;
     }
     .about-block__appeal{
@@ -799,6 +793,14 @@ body{
         padding-bottom: 10px;
         width: 100%;
     }
+    .footer-area__right{
+        width: 100%;
+    }
+    .footer_area__app-links{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .copyright-text{
        font-size: 12px;
         padding-top: 10px;
@@ -809,7 +811,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px){
+@media only screen and (max-width: 920px) and (min-width: 768px){
     .main-wrap::before{
         width: 260px;
         height: 370px;
@@ -834,5 +836,8 @@ body{
     .about-block__screenshot{
         transform: rotate(-25deg) translateY(-30%) translateX(40px);
         max-width: 240px;
+    }
+    .home-block__app-links{
+        align-items: center;
     }
 }
