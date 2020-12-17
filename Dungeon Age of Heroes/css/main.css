@@ -594,6 +594,29 @@ body{
     position: relative;
     transition: all 0.3s ease-out 0s;
 }
+
+.privacy-block{
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #f3fdff 10.42%, #f3fdff 86.46%, rgba(196, 196, 196, 0) 100%);
+overflow: hidden;
+    margin: 114px 0 128px 0;
+    padding: 35px 0;
+}
+
+.privacy-block__title{
+    color: #0898E7;
+    padding-bottom: 35px;
+}
+
+.privacy-block__text{
+    line-height: 24px;
+}
+
+.services{
+    padding: 5px 0;
+    color: #0898E7;
+    display: block;
+    width: fit-content;
+}
 /*Animation custom*/
 
 @keyframes video {

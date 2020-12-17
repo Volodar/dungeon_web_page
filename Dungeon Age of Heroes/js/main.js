@@ -2,38 +2,6 @@
 new WOW().init();
 
 $(document).ready(function() {
-    //MagnificPopup
-    $('.popup-youtube').magnificPopup({
-        disableOn: 320,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-
-        fixedContentPos: false
-    });
-
-    //Swipper
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        direction: 'horizontal',
-        speed: 1000,
-        effect: 'coverflow',
-        loop: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 40,
-            depth: 150,
-            modifier: 1,
-            slideShadows: false
-        }
-    });
 
     //HeaderSticky
     $(window).on('scroll', function (event) {
@@ -112,5 +80,38 @@ $(document).ready(function() {
             toggle = false;
         }
     });
+
+        //MagnificPopup
+        $('.popup-youtube').magnificPopup({
+            disableOn: 320,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+
+        //Swipper
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            direction: 'horizontal',
+            speed: 1000,
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 40,
+                depth: 150,
+                modifier: 1,
+                slideShadows: false
+            }
+        });
 
 });
