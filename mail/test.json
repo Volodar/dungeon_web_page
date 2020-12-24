@@ -1,0 +1,7 @@
+{
+	"mail_1": {
+		"title": "Some test title",
+		"text": "Some test text",
+		"reward": "gems:100,gold:100"
+	}
+}
